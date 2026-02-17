@@ -1,122 +1,127 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="tr">
+
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Nova Digital</title>
-
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-
-  <style>
-    .hero {
-      background: url('https://images.unsplash.com/photo-1492724441997-5dc865305da7?w=1400') center/cover no-repeat;
-      height: 90vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: white;
-      text-align: center;
-    }
-    .hero-overlay {
-      background: rgba(0,0,0,0.6);
-      padding: 40px;
-      border-radius: 10px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IronForge Gym</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
-<!-- NAVBAR -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <div class="container">
-    <a class="navbar-brand" href="#">Nova Digital</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="menu">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link" href="#anasayfa">Anasayfa</a></li>
-        <li class="nav-item"><a class="nav-link" href="#hizmetler">Hizmetler</a></li>
-        <li class="nav-item"><a class="nav-link" href="#hakkimizda">Hakkımızda</a></li>
-        <li class="nav-item"><a class="nav-link" href="#iletisim">İletişim</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
-<!-- HERO -->
-<section id="anasayfa" class="hero">
-  <div class="hero-overlay">
-    <h1 class="display-4 fw-bold">Dijital Dünyada Güçlü Bir Adım</h1>
-    <p class="lead">Markanızı profesyonel web tasarım ile büyütün.</p>
-    <a href="#iletisim" class="btn btn-danger btn-lg mt-3">Teklif Al</a>
-  </div>
-</section>
-
-<!-- HİZMETLER -->
-<section id="hizmetler" class="container mt-5">
-  <h2 class="text-center mb-4">Hizmetlerimiz</h2>
-  <div class="row">
-
-    <div class="col-md-4">
-      <div class="card shadow">
-        <div class="card-body text-center">
-          <h5 class="card-title">Web Tasarım</h5>
-          <p class="card-text">Mobil uyumlu ve modern web siteleri tasarlıyoruz.</p>
+    <nav class="navbar">
+        <div class="logo">IRONFORGE</div>
+        <ul class="nav-links">
+            <li><a href="#home">Ana Sayfa</a></li>
+            <li><a href="#gallery">Galeri</a></li>
+            <li><a href="#membership">Üyelik</a></li>
+            <li><a href="guide.html">Rehber</a></li>
+            <li><a href="#contact">İletişim</a></li>
+        </ul>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
-      </div>
-    </div>
+    </nav>
 
-    <div class="col-md-4">
-      <div class="card shadow">
-        <div class="card-body text-center">
-          <h5 class="card-title">SEO Hizmeti</h5>
-          <p class="card-text">Google’da üst sıralara çıkmanız için optimizasyon.</p>
+    <header id="home" class="hero"
+        style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('buyukcekmece-spor-salonu-1623508980.jpg'); background-size: cover; background-position: center;">
+        <div class="hero-content">
+            <h1>SINIRLARINI ZORLA</h1>
+            <p>Hayalindeki vücuda ulaşmak için bugün başla.</p>
+            <a href="#membership" class="cta-button">BİZE KATIL</a>
         </div>
-      </div>
-    </div>
+    </header>
 
-    <div class="col-md-4">
-      <div class="card shadow">
-        <div class="card-body text-center">
-          <h5 class="card-title">Danışmanlık</h5>
-          <p class="card-text">Dijital dönüşüm ve marka konumlandırma.</p>
+    <section id="gallery" class="section gallery">
+        <h2 class="section-title">SALONUMUZ</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="Kardiyo.jpg" alt="Cardio Alanı" class="gallery-img">
+                <div class="overlay">Cardio</div>
+            </div>
+            <div class="gallery-item">
+                <img src="buyukcekmece-spor-salonu-1623508980.jpg" alt="Ağırlık Bölümü" class="gallery-img">
+                <div class="overlay">Serbest Ağırlık</div>
+            </div>
+            <div class="gallery-item">
+                <img src="676x450_Yoga_Thumbnail.jpg" alt="Yoga Stüdyosu" class="gallery-img">
+                <div class="overlay">Stüdyo</div>
+            </div>
         </div>
-      </div>
-    </div>
+    </section>
 
-  </div>
-</section>
+    <section id="membership" class="section membership">
+        <h2 class="section-title">ÜYELİK PAKETLERİ</h2>
+        <div class="pricing-container">
+            <div class="pricing-card">
+                <h3>BAŞLANGIÇ</h3>
+                <div class="price">750₺<span>/ay</span></div>
+                <ul>
+                    <li>Tüm Cardio Ekipmanları</li>
+                    <li>Serbest Ağırlık Alanı</li>
+                    <li>Duş ve Dolap</li>
+                    <li class="disabled">Grup Dersleri</li>
+                    <li class="disabled">Özel Hoca</li>
+                </ul>
+                <button class="select-btn">SEÇ</button>
+            </div>
+            <div class="pricing-card recommended">
+                <div class="badge">EN POPÜLER</div>
+                <h3>PRO</h3>
+                <div class="price">1250₺<span>/ay</span></div>
+                <ul>
+                    <li>Tüm Cardio Ekipmanları</li>
+                    <li>Serbest Ağırlık Alanı</li>
+                    <li>Duş, Dolap ve Sauna</li>
+                    <li>Sınırsız Grup Dersleri</li>
+                    <li class="disabled">Özel Hoca</li>
+                </ul>
+                <button class="select-btn">SEÇ</button>
+            </div>
+            <div class="pricing-card">
+                <h3>ELITE</h3>
+                <div class="price">2000₺<span>/ay</span></div>
+                <ul>
+                    <li>Tüm İmkanlara Erişim</li>
+                    <li>Özel SPA Alanı</li>
+                    <li>Ücretsiz Diyetisyen</li>
+                    <li>Sınırsız Grup Dersleri</li>
+                    <li>Ayda 2 Özel Ders</li>
+                </ul>
+                <button class="select-btn">SEÇ</button>
+            </div>
+        </div>
+    </section>
 
-<!-- HAKKIMIZDA -->
-<section id="hakkimizda" class="bg-light p-5 mt-5">
-  <div class="container text-center">
-    <h2>Hakkımızda</h2>
-    <p>Nova Digital olarak işletmelere profesyonel ve mobil uyumlu web çözümleri sunuyoruz. Hedefimiz markanızı dijital dünyada güçlü konuma taşımaktır.</p>
-  </div>
-</section>
+    <section id="contact" class="section contact">
+        <h2 class="section-title">İLETİŞİM</h2>
+        <div class="contact-container">
+            <form class="contact-form">
+                <input type="text" placeholder="Adınız Soyadınız" required>
+                <input type="email" placeholder="E-posta Adresiniz" required>
+                <textarea placeholder="Mesajınız" rows="5" required></textarea>
+                <button type="submit">GÖNDER</button>
+            </form>
+            <div class="contact-info">
+                <p><strong>Adres:</strong> Spor Caddesi No:10, Kadıköy / İstanbul</p>
+                <p><strong>Telefon:</strong> 0216 555 00 00</p>
+                <p><strong>E-posta:</strong> info@ironforgegym.com</p>
+                <div class="map-placeholder">HARİTA</div>
+            </div>
+        </div>
+    </section>
 
-<!-- İLETİŞİM -->
-<section id="iletisim" class="container mt-5 mb-5">
-  <h2 class="text-center mb-4">İletişim</h2>
-  <div class="row justify-content-center">
-    <div class="col-md-6">
-      <form>
-        <input type="text" class="form-control mb-3" placeholder="Ad Soyad">
-        <input type="email" class="form-control mb-3" placeholder="E-posta">
-        <textarea class="form-control mb-3" rows="4" placeholder="Mesajınız"></textarea>
-        <button class="btn btn-dark w-100">Gönder</button>
-      </form>
-    </div>
-  </div>
-</section>
+    <footer>
+        <p>&copy; 2026 IronForge Gym. Tüm hakları saklıdır.</p>
+    </footer>
 
-<!-- FOOTER -->
-<footer class="bg-dark text-white text-center p-3">
-  <p>© 2026 Nova Digital | Tüm Hakları Saklıdır</p>
-</footer>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-
+    <script src="script.js"></script>
 </body>
+
 </html>
