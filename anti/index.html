@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IronForge Gym</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="logo">IRONFORGE</div>
+        <ul class="nav-links">
+            <li><a href="#home">Ana Sayfa</a></li>
+            <li><a href="#gallery">Galeri</a></li>
+            <li><a href="#membership">Üyelik</a></li>
+            <li><a href="guide.html">Rehber</a></li>
+            <li><a href="#contact">İletişim</a></li>
+        </ul>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <header id="home" class="hero"
+        style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('buyukcekmece-spor-salonu-1623508980.jpg'); background-size: cover; background-position: center;">
+        <div class="hero-content">
+            <h1>SINIRLARINI ZORLA</h1>
+            <p>Hayalindeki vücuda ulaşmak için bugün başla.</p>
+            <a href="#membership" class="cta-button">BİZE KATIL</a>
+        </div>
+    </header>
+
+    <section id="gallery" class="section gallery">
+        <h2 class="section-title">SALONUMUZ</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="Kardiyo.jpg" alt="Cardio Alanı" class="gallery-img">
+                <div class="overlay">Cardio</div>
+            </div>
+            <div class="gallery-item">
+                <img src="buyukcekmece-spor-salonu-1623508980.jpg" alt="Ağırlık Bölümü" class="gallery-img">
+                <div class="overlay">Serbest Ağırlık</div>
+            </div>
+            <div class="gallery-item">
+                <img src="676x450_Yoga_Thumbnail.jpg" alt="Yoga Stüdyosu" class="gallery-img">
+                <div class="overlay">Stüdyo</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="membership" class="section membership">
+        <h2 class="section-title">ÜYELİK PAKETLERİ</h2>
+        <div class="pricing-container">
+            <div class="pricing-card">
+                <h3>BAŞLANGIÇ</h3>
+                <div class="price">750₺<span>/ay</span></div>
+                <ul>
+                    <li>Tüm Cardio Ekipmanları</li>
+                    <li>Serbest Ağırlık Alanı</li>
+                    <li>Duş ve Dolap</li>
+                    <li class="disabled">Grup Dersleri</li>
+                    <li class="disabled">Özel Hoca</li>
+                </ul>
+                <button class="select-btn">SEÇ</button>
+            </div>
+            <div class="pricing-card recommended">
+                <div class="badge">EN POPÜLER</div>
+                <h3>PRO</h3>
+                <div class="price">1250₺<span>/ay</span></div>
+                <ul>
+                    <li>Tüm Cardio Ekipmanları</li>
+                    <li>Serbest Ağırlık Alanı</li>
+                    <li>Duş, Dolap ve Sauna</li>
+                    <li>Sınırsız Grup Dersleri</li>
+                    <li class="disabled">Özel Hoca</li>
+                </ul>
+                <button class="select-btn">SEÇ</button>
+            </div>
+            <div class="pricing-card">
+                <h3>ELITE</h3>
+                <div class="price">2000₺<span>/ay</span></div>
+                <ul>
+                    <li>Tüm İmkanlara Erişim</li>
+                    <li>Özel SPA Alanı</li>
+                    <li>Ücretsiz Diyetisyen</li>
+                    <li>Sınırsız Grup Dersleri</li>
+                    <li>Ayda 2 Özel Ders</li>
+                </ul>
+                <button class="select-btn">SEÇ</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section contact">
+        <h2 class="section-title">İLETİŞİM</h2>
+        <div class="contact-container">
+            <form class="contact-form">
+                <input type="text" placeholder="Adınız Soyadınız" required>
+                <input type="email" placeholder="E-posta Adresiniz" required>
+                <textarea placeholder="Mesajınız" rows="5" required></textarea>
+                <button type="submit">GÖNDER</button>
+            </form>
+            <div class="contact-info">
+                <p><strong>Adres:</strong> Spor Caddesi No:10, Kadıköy / İstanbul</p>
+                <p><strong>Telefon:</strong> 0216 555 00 00</p>
+                <p><strong>E-posta:</strong> info@ironforgegym.com</p>
+                <div class="map-placeholder">HARİTA</div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 IronForge Gym. Tüm hakları saklıdır.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
